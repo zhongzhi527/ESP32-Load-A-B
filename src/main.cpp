@@ -35,7 +35,8 @@ constexpr int32_t STANDALONE_LOCK_THRESHOLD_GRAMS = 3000;
 constexpr uint32_t STANDALONE_LOCK_SETTLE_MS = 2500;
 constexpr uint8_t STANDALONE_LOCK_MIN_SAMPLES = 5;
 constexpr uint8_t STANDALONE_LOCK_SAMPLE_CAPACITY = 8;
-// Inclusive peak-to-peak range: 5.50 through 6.50 kg is accepted.
+// Maximum peak-to-peak spread (1 kg) allowed while settling before the
+// standalone weight-lock will commit a reading.
 constexpr int32_t STANDALONE_LOCK_NOISE_WINDOW_GRAMS = 1000;
 
 constexpr int SCREEN_WIDTH = 128;
